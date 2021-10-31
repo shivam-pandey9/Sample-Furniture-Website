@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Chair</title>
+<style>
+
+body{
+	background-color:grey;
+}
+.nv a{
+	color:white;
+	text-decoration:none;
+	float:left;
+	padding:3px 3px 3px 3px;
+}
+.nv1 a{
+	padding:3px 3px 3px 3px;
+	color:white;
+	text-decoration:none;
+	float:right;
+}
+.navb{
+	background-color:black;
+	padding: 5px 5px 5px 5px
+}
+h4{
+	display:inline;
+}
+.hd{
+	text-align:center;
+	border:5px dotted red;
+	font-size: 5em;
+}
+.he{
+	text-align:center;
+	font-size: 2em;
+	border: 2px solid green;
+}
+
+.im img{
+	/* 		crop image  -ve margin */
+	display:inline-block;
+	width:330px;
+	height:300px;
+}
+.im1 img{
+	width:100%
+	height: 500px ;
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.row1{
+	/* 	display:flex; */
+	/* 	flex align images in a line */
+	/* no need to align middle */
+	
+}
+.col1 {
+	width:20%;
+	float: left;
+	height:500px;
+}
+.col2 {
+	width:60%;
+	float: left;
+}
+.abst {
+	left:0;
+	top:0;
+	position:absolute;
+	z-index:-1;
+}
+
+.col1 img{
+	width:100%;
+	/* 	height:100%; */
+}
+
+table ,th, td{
+	border: 1px solid red;
+	margin-left : auto ;
+	margin-right : auto ;
+}
+
+.t1 img{
+	width:49.5%;
+	height:400px;
+	/* 	margin-left:0; */
+	/* 	margin-right:0; */
+	float:left;
+	border:0.5px solid black;
+}
+
+.t2{
+	text-align:center;
+}
+
+@media screen and (max-width: 500px) {
+	.col1 {
+		width: 100%;
+	}
+	.col2 {
+		width: 100%;
+	}
+	.col1 img{
+		width:100%;
+		height:100%;
+	}
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="navb">
+<h4 class="nv"><a href='./home.html'>Home</a><h4>
+&nbsp;&nbsp;
+<h4 class='nv'><a href='./furnitures.html'>Furnitures</a><h4>
+&nbsp;&nbsp;
+<h4 class='nv'><a href='./about.html'>About</a><h4>
+&nbsp;&nbsp;
+<h4 class='nv'><a href='./contact.html'>Contacts</a><h4>
+&nbsp;&nbsp;
+<h4 class='nv1'><a href='./signin.html'>Sign In</a><h4>
+&nbsp;&nbsp;
+<h4 class='nv1'><a href='./signup.html'>Sign Up</a><h4>
+</div>
+
+<hr>
+
+<div class='im'>
+<img src='img3.jpg'/>
+<img src='img1.jpg'/>
+<img src='img5.jpg'/>
+<img src='img4.jpg'/>
+</img>
+
+<div class="hd"> Chairs </div>
+
+<div class="he"> Click on item You want to purchase </div>
+
+
+<div class='row1' > 
+<div class='col1'>
+
+<div> 
+<img src='add1.jpg' alt='advertisement'  />
+</div>
+
+<div> 
+<img src='add2.jpg' alt='advertisement'  />
+</div>
+
+<div> 
+<img src='add4.jpg' alt='advertisement'  />
+</div>
+
+</div>
+
+<div class='col2'>
+<!--   20 each -->
+
+<div class='t1'> <a href='' ><img src='./chairimg/img1.jpg' /> </a> </div>
+<div class='t1'> <a href='' ><img src='./chairimg/img2.jpg' /> </a> </div>
+<div class='t1'> <a href='' ><img src='./chairimg/img3.jpg' /> </a> </div>
+<div class='t1'> <a href='' ><img src='./chairimg/img4.jpg' /> </a> </div>
+<div class='t1'> <a href='' ><img src='./chairimg/img5.jpg' /> </a> </div>
+<div class='t1'> <a href='' ><img src='./chairimg/img6.jpg' /> </a> </div>
+
+
+<!-- add an alert after click , also for price try to write over image or some button below for add 1 or 2 ,... and payment -->
+<!--<div class='t1'>
+<h8>$600</h8>
+<div class='price'> <a href='' ><img src='./bedimg/img6.jpg' />  </a> </div>
+</div>-->
+
+<!-- <div class='abst'>fsffdfd</div>  trying to write over image in col-->
+<!-- <div class='t1'> <a href='' ><img src='./bedimg/img6.jpg' /> </a> </div> -->
+
+<h2 class='t2' > Contact Us </h2>
+
+<table>
+<tr>
+<th>Shivam Pandey</th>
+<th> shivampandey9599@gmail.com</th>
+<th> +91 9999999999 </th>
+</tr>
+</table>
+
+
+<table>
+<tr>
+<th> Facebook id</th>
+<th> linkedin id </th>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> Shop Address</th>
+<th> ABb fddb  lfjd </th>
+</tr>
+</table>
+
+</div>
+
+<div class='col1'>
+
+<div> 
+<img src='add3.jpg' alt='advertisement'  />
+</div>
+
+<div> 
+<img src='add1.jpg' alt='advertisement'  /> 
+</div>
+
+<div> 
+<img src='add5.jpg' alt='advertisement'  />
+</div>
+
+
+</div>
+</div>
+
+
+
+</body>
+</html>
