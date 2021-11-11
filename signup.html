@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html><head>
     <title>Sign Up</title>
   </head>
@@ -7,50 +7,52 @@
   <h1 style="text-align:center"> <b> Sign Up <b> </b></b></h1><b><b>
    
    
-    <form>
+   <form action="database.php" method = "post">
     <fieldset style="text-align:center">
     <legend>Personal Info</legend>
     First Name
-    <input type="text" name="fname">
+    <input type="text" id="fname" name="fname">
     &nbsp;   <!-- for space -->
     Last Name
-    <input type="text" name="lname">
+    <input type="text" id="lname" name="lname">
     <br>
     <br>
 Preferred Username 
-<input type="username" name="user">
+<input type="username" id="user" name="user">
     <br>
     <br>
 Email 
-<input type="email" name="email">
+<input type="email" id="email" name="email">
 
     <br>
     <br>
 Password 
-<input type="password" name="password">
+<input type="password" id="pass" name="pass">
    
 Rewrite Password 
-<input type="password" name="password">
+<input type="password" id="pass1" name="pass1">
 
 <br><br>
     Gender
-    <input type="radio" name="gender" value="male">male
+    <input type="radio" id="gender1" name="gender1" value="male">male
     <t>
-    <input type="radio" name="gender" value="female">female
+    <input type="radio" id="gender2" name="gender2" value="female">female
     <t>
-    <input type="radio" name="gender" value="others">others
+    <input type="radio" id="gender3" name="gender3" value="others">others
+    <t>
+    <button id = 'gg'>Clear</button>
     <br>
     <br>DOB
-    <input type="date" name="DOB">
+    <input type="date" id="dob" name="dob">
     <br>
 <br>Address Line
-    <textarea type="message" row="5" cols="50"></textarea>
+<textarea type="message" row="5" cols="50" id = 'txt' name= 'txt' ></textarea>
 <br><br>
 Pincode
-<input type="number" name="pincode">	
+<input type="number" id="pincode" name="pincode">	
 <br><br>
 Select
-	<select>
+<select id = "state" name = "state" >
 	<option value="">Select Your State</option>
 	<option value="Delhi">Delhi</option>
 	<option value="Mumbai">Mumbai</option>
@@ -60,7 +62,7 @@ Select
    
    
     <br><br>
-    <button type="button" onclick="alert('Sign Up Success')">Submit</button>
+    <button type="submit" id ="btn" name ="btn" >Submit</button>
    
    <br><br>
    <h4><a href="./signin.html" >Click Here to Sign In</a></h4>
@@ -72,4 +74,9 @@ Select
  
  
   
-</b></b></body></html>
+</b></b>
+
+<script src ="signup.js"></script>
+<?php include 'database.php' ?>
+
+</body></html>
